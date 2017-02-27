@@ -125,7 +125,7 @@ input:focus {
 	font-weight: normal;
 }
 
-.nav ul.selected {
+.nav ul li.current-menu-item {
 	font-weight: bold;
 }
 /* sidebar */
