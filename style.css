@@ -125,12 +125,13 @@ input:focus {
 	font-weight: normal;
 	width: 265px;
 	margin-top: 23px;
-	display: flex;
 	padding: 0;
+	display: flex;
 	justify-content: space-between;
 }
 
 .nav ul li {
+	padding: 0;
 }
 
 .nav ul li.current-menu-item {
