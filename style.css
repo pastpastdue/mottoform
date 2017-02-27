@@ -78,21 +78,29 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
+	width:1280px;
 	margin:0 auto;
 	position:relative;
 }
 /* header */
 .header {
-
+	width: 1280px;
+	margin: 0 auto;
+	height: 126px;
+	background: #fff;
+	display: block;
+	position: fixed;
 }
 /* logo */
 .logo {
-
+	display: block;
+	width: 226px;
+	height: 41px;
 }
 .logo-img {
-
+	display: block;
+	width: 226px;
+	height: 41px;
 }
 /* nav */
 .nav {
