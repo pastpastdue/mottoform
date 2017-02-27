@@ -90,12 +90,15 @@ input:focus {
 	background: #fff;
 	display: block;
 	position: fixed;
+	z-index: 1;
 }
 /* logo */
 .logo {
 	display: block;
+	float: left;
 	width: 226px;
 	height: 41px;
+	padding-left: 56px;
 }
 .logo-img {
 	display: block;
@@ -104,7 +107,9 @@ input:focus {
 }
 /* nav */
 .nav {
-
+	display: block;
+	float: right;
+	padding-right: 56px;
 }
 /* sidebar */
 .sidebar {
