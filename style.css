@@ -120,6 +120,13 @@ input:focus {
 .nav ul {
 	display: inline-block;
 	list-style: none;
+	font-size: 17px;
+	color: #000;
+	font-weight: normal;
+}
+
+.nav ul.selected {
+	font-weight: bold;
 }
 /* sidebar */
 .sidebar {
