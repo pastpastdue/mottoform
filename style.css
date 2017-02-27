@@ -90,7 +90,7 @@ input:focus {
 /* header */
 .header {
 	width: 1280px;
-	margin: 0 auto;
+	padding: 0 56px;
 	height: 126px;
 	background: #fff;
 	display: block;
@@ -103,7 +103,6 @@ input:focus {
 	float: left;
 	width: 226px;
 	height: 41px;
-	margin-left: 56px;
 }
 .logo-img {
 	display: block;
@@ -114,7 +113,6 @@ input:focus {
 .nav {
 	display: block;
 	float: right;
-	margin-right: 56px;
 }
 
 .nav ul {
