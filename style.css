@@ -91,11 +91,13 @@ input:focus {
 .header {
 	width: 1280px;
 	padding: 0 56px;
+	padding-top: 36px;
 	height: 126px;
 	background: #fff;
 	display: block;
 	position: fixed;
 	z-index: 1;
+	top: 0;
 }
 /* logo */
 .logo {
