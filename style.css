@@ -130,11 +130,10 @@ input:focus {
 }
 
 .nav ul li {
-	display: inline-block;
 }
 
 .nav ul li.current-menu-item {
-	font-weight: bold;
+	font-weight: 700;
 }
 /* sidebar */
 .sidebar {
