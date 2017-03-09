@@ -141,3 +141,128 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Register custom post types
+ */
+
+function revcon_change_post_label() {
+   global $menu;
+   global $submenu;
+   $menu[5][0] = 'Products';
+   $submenu['edit.php'][5][0] = 'Products';
+   $submenu['edit.php'][10][0] = 'Add Products';
+   $submenu['edit.php'][16][0] = 'Tags';
+}
+function revcon_change_post_object() {
+   global $wp_post_types;
+   $labels = &$wp_post_types['post']->labels;
+   $labels->name = 'Products';
+   $labels->singular_name = 'Product';
+   $labels->add_new = 'Add Product';
+   $labels->add_new_item = 'Product Title';
+   $labels->edit_item = 'Edit Product';
+   $labels->new_item = 'Product';
+   $labels->view_item = 'View Products';
+   $labels->search_items = 'Search Products';
+   $labels->not_found = 'No Products found';
+   $labels->not_found_in_trash = 'No Products found in Trash';
+   $labels->all_items = 'All Products';
+   $labels->menu_name = 'Products';
+   $labels->name_admin_bar = 'Products';
+	 $wp_post_types['post']->rewrite = array( 'slug' => 'product' );
+}
+
+add_action( 'admin_menu', 'revcon_change_post_label' );
+add_action( 'init', 'revcon_change_post_object' );
+
+function create_post_type() {
+	register_post_type( 'Surface',
+    array(
+      'labels' => array(
+				'name'               => 'Surfaces',
+		    'singular_name'      => 'Surface',
+		    'menu_name'          => 'Surfaces',
+		    'name_admin_bar'     => 'Surfaces',
+		    'add_new'            => 'Add Surface',
+		    'add_new_item'       => 'Surface Title',
+		    'new_item'           => 'New Surface',
+		    'edit_item'          => 'Edit Surface',
+		    'view_item'          => 'View Surface',
+		    'all_items'          => 'All Surfaces',
+		    'search_items'       => 'Search Surfaces',
+		    'parent_item_colon'  => 'Parent Surfaces',
+		    'not_found'          => 'No Surfaces Found',
+		    'not_found_in_trash' => 'No Surfaces Found in Trash',
+      ),
+	    'public'              => true,
+	    'exclude_from_search' => false,
+	    'publicly_queryable'  => true,
+	    'show_ui'             => true,
+	    'show_in_nav_menus'   => true,
+	    'show_in_menu'        => true,
+	    'show_in_admin_bar'   => true,
+	    'menu_icon'           => 'dashicons-admin-customizer',
+	    'capability_type'     => 'post',
+			'taxonomies'  				=> array( 'category', 'post_tag' ),
+	    'hierarchical'        => false,
+	    'has_archive'         => true,
+	    'rewrite'             => array( 'slug' => 'surface' ),
+	    'query_var'           => true,
+			'supports'          	=> array( 'title', 'thumbnail'),
+			'menu_position' 			=> 5
+    )
+  );
+	register_post_type( 'Press',
+    array(
+      'labels' => array(
+				'name'               => 'Press',
+				'singular_name'      => 'Press',
+				'menu_name'          => 'Press',
+				'name_admin_bar'     => 'Press',
+				'add_new'            => 'Add Press',
+				'add_new_item'       => 'Press Title',
+				'new_item'           => 'New Press',
+				'edit_item'          => 'Edit Press',
+				'view_item'          => 'View Press',
+				'all_items'          => 'All Press',
+				'search_items'       => 'Search Press',
+				'parent_item_colon'  => 'Parent Press',
+				'not_found'          => 'No Press Found',
+				'not_found_in_trash' => 'No Press Found in Trash',
+      ),
+			'public'              => true,
+	    'exclude_from_search' => false,
+	    'publicly_queryable'  => true,
+	    'show_ui'             => true,
+	    'show_in_nav_menus'   => true,
+	    'show_in_menu'        => true,
+	    'show_in_admin_bar'   => true,
+	    'menu_icon'           => 'dashicons-microphone',
+	    'capability_type'     => 'post',
+			'taxonomies'  				=> array( 'category', 'post_tag' ),
+	    'hierarchical'        => false,
+	    'has_archive'         => true,
+	    'rewrite'             => array( 'slug' => 'press' ),
+	    'query_var'           => true,
+			'supports'          	=> array( 'title', 'thumbnail'),
+			'menu_position' 			=> 5
+    )
+  );
+}
+
+add_action( 'init', 'create_post_type' );
+
+
+function remove_admin_menu_items() {
+	$remove_menu_items = array(__('Posts'));
+	global $menu;
+	end ($menu);
+	while (prev($menu)){
+		$item = explode(' ',$menu[key($menu)][0]);
+		if(in_array($item[0] != NULL?$item[0]:"" , $remove_menu_items)){
+		unset($menu[key($menu)]);}
+	}
+}
+
+add_action('admin_menu', 'remove_admin_menu_items');

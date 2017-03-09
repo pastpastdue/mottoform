@@ -21,9 +21,27 @@ get_header(); ?>
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			
+				<ul class="product-list">
+
+
+					<li>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="product-image">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+									<?php the_post_thumbnail(); ?>
+								</a>
+							</div>
+							<div class="product-overlay">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+									<span><?php the_title(); ?></span>
+								</a>
+							</div>
+						</article>
+					</li>
+
+
+				</ul>
 
 			<?php
 			endif;
