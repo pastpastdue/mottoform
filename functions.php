@@ -42,6 +42,15 @@ function mottoform_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+		set_post_thumbnail_size( 265, 265, true );
+		add_image_size( '4-col-horizontal', 1156, 9999 );
+		add_image_size( '3-col-square', 859, 9999 );
+		add_image_size( '3-col-horizontal', 859, 572, true );
+		add_image_size( '2-col-vertical', 562, 9999 );
+		add_image_size( '2-col-square', 562, 572, true );
+		add_image_size( '1-col', 265, 340, true );
+
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'mottoform' ),

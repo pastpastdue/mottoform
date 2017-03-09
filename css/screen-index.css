@@ -5,6 +5,7 @@
 	margin: 0;
 	list-style: none;
 	clear: both;
+	overflow: auto;
 	padding: 0 46px;
 }
 

@@ -17,54 +17,37 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<ul class="product-list">
+
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) : ?>
-			
-				<ul class="product-list">
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
+				if ( is_front_page() ) : ?>
 
 
 					<li>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="product-image">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail(); ?>
-								</a>
-							</div>
-							<div class="product-overlay">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<span><?php the_title(); ?></span>
-								</a>
-							</div>
-						</article>
+						<div class="product-image">
+								<?php the_post_thumbnail(); ?>
+						</div>
+						<div class="product-overlay">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<span><?php the_title(); ?></span>
+							</a>
+						</div>
 					</li>
 
 
-				</ul>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
+					<?php
+					endif;
 			endwhile;
 
 			the_posts_navigation();
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
 		endif; ?>
+
+		</ul>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
