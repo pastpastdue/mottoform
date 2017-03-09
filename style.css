@@ -1,0 +1,28 @@
+/*
+	Theme Name: mottoform
+	Theme URI: http://mottoform.com
+	Description: custom portfolio theme for elizabeth salonen
+	Version: 1.0
+	Author: Eric Croskey
+	Author URI: http://ericcroskey.com
+	Tags:
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@import url('css/reset.css');
+
+@import url('css/screen-global.css');
+@import url('css/screen-index.css');
+/*@import url('css/screen-product.css');*/
+
+@import url('css/print.css');
+
+@import url('css/media-queries.css');
