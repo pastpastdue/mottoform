@@ -1,0 +1,59 @@
+.product-list {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	clear: both;
+	padding: 0 46px;
+}
+
+.product-list li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 265px;
+	margin: 16px;
+}
+
+.product-list li .product-image {
+	display: block;
+	position: relative;
+}
+
+.product-list li .product-image img {
+	width: 100%;
+}
+
+.product-list li .product-overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.product-list li .product-overlay a {
+	position: relative;
+	opacity: 0;
+	display: block;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.product-list li .product-overlay a span {
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+
+.product-list .product-overlay a:hover {
+	opacity: 0.75;
+}
