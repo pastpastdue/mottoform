@@ -42,7 +42,7 @@ get_header(); ?>
 
 			<ul class="product-list" id="surface">
 
-				<h3>Surface: Textile and Wallpaper</h3>
+				<h3><?php echo category_description( get_category_by_slug('surface')->term_id ); ?></h3>
 
 				<?php
 				$surface_args = array( 'post_type' => 'surface', 'posts_per_page' => 9999 );
