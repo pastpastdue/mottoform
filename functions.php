@@ -54,6 +54,7 @@ function mottoform_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'mottoform' ),
+		'menu-2' => esc_html__( 'Social', 'mottoform' ),
 	) );
 
 	/*
@@ -186,7 +187,7 @@ add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
 
 function create_post_type() {
-	register_post_type( 'Surface',
+	register_post_type( 'surface',
     array(
       'labels' => array(
 				'name'               => 'Surfaces',
@@ -218,11 +219,11 @@ function create_post_type() {
 	    'has_archive'         => true,
 	    'rewrite'             => array( 'slug' => 'surface' ),
 	    'query_var'           => true,
-			'supports'          	=> array( 'title', 'thumbnail'),
-			'menu_position' 			=> 5
+			'supports'          	=> array( 'title', 'thumbnail', 'editor'),
+			'menu_position' 			=> 5,
     )
   );
-	register_post_type( 'Press',
+	register_post_type( 'press',
     array(
       'labels' => array(
 				'name'               => 'Press',
@@ -254,7 +255,7 @@ function create_post_type() {
 	    'has_archive'         => true,
 	    'rewrite'             => array( 'slug' => 'press' ),
 	    'query_var'           => true,
-			'supports'          	=> array( 'title', 'thumbnail'),
+			'supports'          	=> array( 'title', 'thumbnail', 'editor'),
 			'menu_position' 			=> 5
     )
   );

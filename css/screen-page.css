@@ -1,0 +1,57 @@
+.site-margin h3 {
+	margin-top: 32px;
+	margin-left: 0;
+}
+
+.entry-content {
+	width: 75%;
+	color: #000;
+}
+
+.entry-content a {
+	border-bottom: 1px solid #000;
+}
+
+.press-list {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	clear: both;
+	overflow: auto;
+	padding: 0 46px;
+}
+
+.press-list li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 265px;
+	height: 404px;
+	overflow: hidden;
+	margin: 16px 16px 0 16px;
+}
+
+.press-list li .press-image {
+	display: block;
+	position: relative;
+	height: 340px;
+}
+
+.press-list li .press-image img {
+	width: 100%;
+}
+
+.press-list li .press-description p {
+	padding: 0;
+	margin: 4px 0 0 0;
+	font-size: 15px;
+	line-height: 19px;
+	color: #666666;
+}
+
+.press-list li .press-description p a {
+	border-bottom: 1px solid #666666;
+	color: #666666;
+}

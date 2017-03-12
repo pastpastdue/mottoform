@@ -37,4 +37,26 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
+		<main id="press">
+			<ul class="press-list">
+				<h3>News and Press</h3>
+
+				<?php
+				$press_args = array( 'post_type' => 'press', 'posts_per_page' => 9999 );
+				$press_loop = new WP_Query( $press_args );
+				while ( $press_loop->have_posts() ) : $press_loop->the_post(); ?>
+
+				<li>
+					<div class="press-image">
+							<?php the_post_thumbnail( '1-col' ); ?>
+					</div>
+					<div class="press-description">
+							<span><?php the_content(); ?></span>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>
+		</main>
+	</div><!-- #primary -->
+
 	<?php get_footer(); ?>

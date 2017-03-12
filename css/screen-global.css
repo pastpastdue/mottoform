@@ -26,18 +26,29 @@ a {
 	color: #000;
 }
 
-@media (min-width: 1280px) {
-  .wrapper {
-    width: 1280px;
-  }
+p {
+	font-size: 20px;
+	line-height: 32px;
 }
 
-@media (max-width: 1279px) {
-  .wrapper {
-    width: 983px;
-  }
+h1 {
+
 }
 
+h2 {
+
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 16px;
+}
+
+.site-margin {
+	margin: 0 62px;
+}
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -103,4 +114,71 @@ a {
 
 .content-area {
 	overflow: auto;
+}
+
+.grid-1-col {
+	margin: 0 16px;
+	width: 265px
+}
+
+.grid-2-col {
+	margin: 0 16px;
+	width: 562px;
+}
+
+.grid-3-col {
+	margin: 0 16px;
+	width: 859px;
+}
+
+.grid-4-col {
+	width: 1156;
+	margin: 0 16px;
+}
+
+.col-float-left {
+	display: block;
+	float: left;
+}
+
+.col-float-right {
+	display: block;
+	float: right;
+}
+
+/* Image Description */
+
+.image-description {
+	padding: 0;
+	margin: 4px 0 0 0;
+	font-size: 15px;
+	line-height: 19px;
+	color: #666666;
+}
+
+/* FOOTER */
+
+.site-footer {
+	padding: 72px 0;
+	width: 174px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.site-footer ul {
+	overflow: auto;
+	list-style: none;
+	padding: 0;
+}
+
+.site-footer ul li {
+	display: block;
+	float: left;
+	margin: 0 9px;
+	width: 40px;
+	height: 40px;
+}
+
+.site-footer ul li img {
+	padding: 0!important;
 }
