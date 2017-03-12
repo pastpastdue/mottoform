@@ -20,8 +20,9 @@ get_header(); ?>
 			<ul class="product-list" id="product">
 
 				<?php
-				if ( have_posts() ) :
-					while ( have_posts() ) : the_post(); ?>
+				$product_args = array( 'post_type' => 'post', 'posts_per_page' => 9999 );
+				$product_loop = new WP_Query( $product_args );
+				while ( $product_loop->have_posts() ) : $product_loop->the_post(); ?>
 
 				<li>
 					<div class="product-image">
@@ -34,9 +35,7 @@ get_header(); ?>
 					</div>
 				</li>
 
-						<?php endwhile;
-
-			endif; ?>
+			<?php endwhile; ?>
 
 			</ul>
 
