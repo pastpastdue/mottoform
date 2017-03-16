@@ -26,40 +26,40 @@ get_header(); ?>
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
 
-			<?php // open the WordPress loop
-
-			// are there any rows within within our flexible content?
-			if( have_rows('product_page_content') ): ?>
-
-			<div class="entry-product-flex">
-
-				<?php while ( have_rows('product_page_content') ) : the_row();
-
-				if( get_row_layout() == '1_column_image' )
-					get_template_part('partials/1_column_image', 'single');
-
-				if( get_row_layout() == '2_column_image' )
-					get_template_part('partials/2_column_image');
-
-				if( get_row_layout() == '3_column_image' )
-					get_template_part('partials/3_column_image');
-
-				if( get_row_layout() == '4_column_image' )
-					get_template_part('partials/4_column_image');
-
-				if( get_row_layout() == 'text_field' )
-					get_template_part('partials/text_field', 'text_field');
-
-				endwhile; // close the loop of flexible content ?>
-
-			</div>
-
-			<?php endif; // close flexible content conditional ?>
-
 		</article><!-- #post-## -->
 
 	<?php endwhile; endif; ?>
 
 	</main><!-- #main -->
+
+	<?php // open the WordPress loop
+
+	// are there any rows within within our flexible content?
+	if( have_rows('product_page_content') ): ?>
+
+	<div class="entry-product-flex">
+
+		<?php while ( have_rows('product_page_content') ) : the_row();
+
+		if( get_row_layout() == '1_column_image' )
+			get_template_part('partials/1_column_image', 'single');
+
+		if( get_row_layout() == '2_column_image' )
+			get_template_part('partials/2_column_image');
+
+		if( get_row_layout() == '3_column_image' )
+			get_template_part('partials/3_column_image');
+
+		if( get_row_layout() == '4_column_image' )
+			get_template_part('partials/4_column_image');
+
+		if( get_row_layout() == 'text_field' )
+			get_template_part('partials/text_field', 'text_field');
+
+		endwhile; // close the loop of flexible content ?>
+
+	</div>
+
+	<?php endif; // close flexible content conditional ?>
 
 <?php get_footer(); ?>

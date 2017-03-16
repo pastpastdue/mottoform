@@ -21,7 +21,7 @@
 
 @import url('css/screen-global.css');
 @import url('css/screen-index.css');
-/*@import url('css/screen-product.css');*/
+@import url('css/screen-product.css');
 @import url('css/screen-page.css');
 
 
