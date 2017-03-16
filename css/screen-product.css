@@ -1,11 +1,9 @@
 .product-flex-list {
 	overflow: auto;
 	list-style: none;
-	padding: 0 46px;
-	margin: 16px 0;
+	padding: 16px 46px;
 }
 
 .product-additional-text {
-	padding: 0 62px;
-	margin: 16px 0;
+	padding: 16px 62px;
 }
