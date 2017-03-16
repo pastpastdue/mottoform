@@ -1,4 +1,4 @@
-<ul class="product-4-col-list">
+<ul class="product-flex-list">
   <li class="grid-4-col">
       <?php // loop through the rows of data
         $four_column_horizontal_image= get_sub_field('four_column_horizontal_image');
