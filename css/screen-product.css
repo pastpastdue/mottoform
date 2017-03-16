@@ -2,8 +2,10 @@
 	overflow: auto;
 	list-style: none;
 	padding: 0 46px;
+	margin: 16px 0;
 }
 
 .product-additional-text {
 	padding: 0 62px;
+	margin: 16px 0;
 }
