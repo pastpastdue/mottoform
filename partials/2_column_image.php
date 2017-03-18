@@ -6,7 +6,7 @@
   $two_column_horizontal_image = get_sub_field('two_column_horizontal_image');
   $two_column_horizontal_image_2 = get_sub_field('two_column_horizontal_image_2');
 
-  if ( get_sub_field('two_column_square_image') ): )
+  if ( get_sub_field('two_column_square_image') )
   ?>
 
   <li class="grid-2-col col-float-left">
@@ -21,7 +21,7 @@
   </li>
 
   <?php
-  if ( get_sub_field('two_column_square_image') ): )
+  if ( get_sub_field('two_column_square_image') )
   ?>
 
   <li class="grid-2-col col-float-left">
