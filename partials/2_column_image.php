@@ -6,7 +6,6 @@
   $two_column_uncropped = get_sub_field('two_column_uncropped');
   $two_column_uncropped_2 = get_sub_field('two_column_uncropped_2');
 
-  if ( get_sub_field('two_column_square_image') )
   ?>
 
   <li class="grid-2-col col-float-left">
@@ -21,7 +20,6 @@
   </li>
 
   <?php
-  if ( get_sub_field('two_column_uncropped') )
   ?>
 
   <li class="grid-2-col col-float-left">
@@ -35,5 +33,4 @@
       ?>
   </li>
 
-  <php endif; ?>
 </ul>
