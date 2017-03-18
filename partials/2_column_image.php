@@ -21,7 +21,7 @@
   </li>
 
   <?php
-  elseif ( get_sub_field('two_column_square_image') ): )
+  if ( get_sub_field('two_column_square_image') ): )
   ?>
 
   <li class="grid-2-col col-float-left">
