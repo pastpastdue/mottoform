@@ -15,9 +15,23 @@ get_header(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if ( has_post_thumbnail() ) {
-				the_post_thumbnail( '4-col-horizontal' );
-			} ?>
+			<?php
+
+				$image_size = get_field('featured_image_size');
+				$new_featured_image = get_field('select_featured_image');
+
+				if( empty($new_featured_image) ):
+
+					if ( has_post_thumbnail() ):
+							the_post_thumbnail( $image_size );
+					endif;
+
+				elseif( !empty($new_featured_image) ) :
+					echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />';
+				endif;
+
+
+			?>
 			<header class="entry-header">
 				<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 			</header><!-- .entry-header -->
