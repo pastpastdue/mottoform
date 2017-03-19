@@ -29,8 +29,8 @@
   </li>
   <li class="grid-2-col col-float-left">
       <?php // loop through the rows of data
-        echo '<img src="' . $two_column_uncropped['sizes']['2-col-vertical'] . '" alt="' . $two_column_uncropped['alt'] . '" />';
+        echo '<img src="' . $two_column_uncropped_2['sizes']['2-col-vertical'] . '" alt="' . $two_column_uncropped_2['alt'] . '" />';
       ?>
   </li>
 
-</ul>
+  </ul>
