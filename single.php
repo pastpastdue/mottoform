@@ -23,12 +23,27 @@ get_header(); ?>
 				if( empty($new_featured_image) ):
 
 					if ( has_post_thumbnail() ):
-							the_post_thumbnail( $image_size );
-					endif;
+							$image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
+							the_post_thumbnail( $image_size ); ?>
+
+							<?php if($image_caption) : ?>
+				      <div class="product-image-description">
+				        <?php echo $image_caption ?>
+				      </div>
+				      <?php endif; ?>
+
+					<?php endif;
 
 				elseif( !empty($new_featured_image) ) :
-					echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />';
-				endif;
+					echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />'; ?>
+
+					<?php if($new_featured_image['caption']) : ?>
+		      <div class="product-image-description">
+		        <?php echo $new_featured_image['caption'] ?>
+		      </div>
+		      <?php endif; ?>
+
+				<?php endif;
 
 
 			?>
