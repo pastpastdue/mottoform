@@ -8,29 +8,35 @@
 
   ?>
 
+<?php if( !empty($two_column_square_image) ): ?>
   <li class="grid-2-col col-float-left">
       <?php // loop through the rows of data
         echo '<img src="' . $two_column_square_image['sizes']['2-col-square'] . '" alt="' . $two_column_square_image['alt'] . '" />';
       ?>
   </li>
+<?php endif; if( !empty($two_column_square_image_2) ): ?>
   <li class="grid-2-col col-float-left">
       <?php // loop through the rows of data
         echo '<img src="' . $two_column_square_image_2['sizes']['2-col-square'] . '" alt="' . $two_column_square_image_2['alt'] . '" />';
       ?>
   </li>
 
-  <?php
-  ?>
+<?php endif; if( !empty($two_column_uncropped) ): ?>
 
   <li class="grid-2-col col-float-left">
       <?php // loop through the rows of data
         echo '<img src="' . $two_column_uncropped['sizes']['2-col-vertical'] . '" alt="' . $two_column_uncropped['alt'] . '" />';
       ?>
   </li>
+
+<?php endif; if( !empty($two_column_uncropped_2) ): ?>
+
   <li class="grid-2-col col-float-left">
       <?php // loop through the rows of data
         echo '<img src="' . $two_column_uncropped_2['sizes']['2-col-vertical'] . '" alt="' . $two_column_uncropped_2['alt'] . '" />';
       ?>
   </li>
+
+<?php endif; ?>
 
   </ul>
