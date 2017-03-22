@@ -5,8 +5,8 @@
 					echo '<img src="' . $one_column_image['sizes']['1-col'] . '" alt="' . $one_column_image['alt'] . '" />';
         ?>
         <div class="product-image-description">
-        <?php if($one_column_image_1['caption']) : ?>
-          <?php echo $one_column_image_1['caption'] ?>
+        <?php if($one_column_image['caption']) : ?>
+          <?php echo $one_column_image['caption'] ?>
         <?php endif; ?>&nbsp;
         </div>
     </li>
