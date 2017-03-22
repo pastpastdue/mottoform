@@ -22,7 +22,7 @@
       <div class="product-image-description">
       <?php if($four_column_square_image['caption']) : ?>
         <?php echo $four_column_square_image['caption'] ?>
-      <?php endif; ?>
+      <?php endif; ?>&nbsp;
       </div>
     <?php endif; ?>
   </li>

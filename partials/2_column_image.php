@@ -16,7 +16,7 @@
       <div class="product-image-description">
       <?php if($two_column_square_image['caption']) : ?>
         <?php echo $two_column_square_image['caption'] ?>
-      <?php endif; ?>
+      <?php endif; ?>&nbsp;
       </div>
   </li>
 <?php endif; if( !empty($two_column_square_image_2) ): ?>
@@ -27,7 +27,7 @@
       <div class="product-image-description">
       <?php if($two_column_square_image_2['caption']) : ?>
         <?php echo $two_column_square_image_2['caption'] ?>
-      <?php endif; ?>
+      <?php endif; ?>&nbsp;
       </div>
   </li>
 
@@ -42,7 +42,7 @@
     <div class="product-image-description">
     <?php if($two_column_uncropped['caption']) : ?>
       <?php echo $two_column_uncropped['caption'] ?>
-    <?php endif; ?>
+    <?php endif; ?>&nbsp;
     </div>
   </li>
 
@@ -55,7 +55,7 @@
       <div class="product-image-description">
       <?php if($two_column_uncropped_2['caption']) : ?>
         <?php echo $two_column_uncropped_2['caption'] ?>
-      <?php endif; ?>
+      <?php endif; ?>&nbsp;
       </div>
 
   </li>
