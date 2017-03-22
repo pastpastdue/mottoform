@@ -7,7 +7,7 @@
         <div class="product-image-description">
         <?php if($one_column_image_1['caption']) : ?>
           <?php echo $one_column_image_1['caption'] ?>
-        <?php endif; ?>
+        <?php endif; ?>&nbsp;
         </div>
     </li>
     <li class="grid-1-col col-float-left">
@@ -18,7 +18,7 @@
         <div class="product-image-description">
         <?php if($one_column_image_2['caption']) : ?>
           <?php echo $one_column_image_2['caption'] ?>
-        <?php endif; ?>
+        <?php endif; ?>&nbsp;
         </div>
     </li>
     <li class="grid-1-col col-float-left">
@@ -29,7 +29,7 @@
         <div class="product-image-description">
         <?php if($one_column_image_3['caption']) : ?>
           <?php echo $one_column_image_3['caption'] ?>
-        <?php endif; ?>
+        <?php endif; ?>&nbsp;
         </div>
     </li>
     <li class="grid-1-col col-float-left">
@@ -40,7 +40,7 @@
         <div class="product-image-description">
         <?php if($one_column_image_4['caption']) : ?>
           <?php echo $one_column_image_4['caption'] ?>
-        <?php endif; ?>
+        <?php endif; ?>&nbsp;
         </div>
     </li>
   </ul>
