@@ -6,7 +6,8 @@
 }
 
 .product-additional-text {
-	padding: 6px 62px;
+	padding-left: 62px!important;
+	padding-top: 6px!important;
 	margin: 0;
 }
 
