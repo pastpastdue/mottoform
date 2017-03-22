@@ -19,12 +19,11 @@
       <?php // loop through the rows of data
         echo '<img src="' . $four_column_square_image['sizes']['4-col-horizontal'] . '" alt="' . $four_column_square_image['alt'] . '" />';
       ?>
-      <?php if($four_column_square_image['caption']) : ?>
       <div class="product-image-description">
+      <?php if($four_column_square_image['caption']) : ?>
         <?php echo $four_column_square_image['caption'] ?>
+      <?php endif; ?>
       </div>
-      <?php endif;
-
-    endif; ?>
+    <?php endif; ?>
   </li>
 </ul>
