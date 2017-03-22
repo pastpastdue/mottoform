@@ -9,6 +9,10 @@
 	color: #000;
 }
 
+.entry-content p {
+	margin: 36px 0;
+}
+
 .entry-content a {
 	border-bottom: 1px solid #000;
 }
