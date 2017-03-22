@@ -106,7 +106,8 @@ h3 {
 	padding: 0;
 }
 
-.nav ul li.current-menu-item {
+.nav ul li.current-menu-item,
+.nav ul li:hover {
 	font-weight: 700;
 }
 
@@ -159,10 +160,9 @@ h3 {
 /* FOOTER */
 
 .site-footer {
-	padding: 72px 0;
 	width: 174px;
 	height: 40px;
-	margin: 0 auto;
+	margin: 54px auto 70px auto;
 }
 
 .site-footer ul {
