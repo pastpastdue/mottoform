@@ -20,10 +20,14 @@ get_header(); ?>
 			<ul class="product-list" id="product">
 
 				<?php
-				if ( have_posts() ) :
-					while ( have_posts() ) : the_post();
+						$product_query = new WP_Query( array(
+						'post_type' => 'post',
+						'category_name' => 'products',
+						'posts_per_page' => 999));
 
-						if( has_category('product') ):
+						if ( $product_query->have_posts() ) :
+							while ( $product_query->have_posts() ) :
+                $product_query->the_post();
 
 					?>
 
