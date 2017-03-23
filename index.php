@@ -21,7 +21,11 @@ get_header(); ?>
 
 				<?php
 				if ( have_posts() ) :
-					while ( have_posts() ) : the_post(); ?>
+					while ( have_posts() ) : the_post();
+
+						if( has_category('product') ):
+
+					?>
 
 				<li>
 
@@ -48,7 +52,9 @@ get_header(); ?>
 
 				</li>
 
-						<?php endwhile;
+			<?php
+						endif;
+					endwhile;
 
 			endif; ?>
 
@@ -56,34 +62,49 @@ get_header(); ?>
 
 
 			<ul class="product-list" id="surface">
-
 				<h3><?php echo category_description( get_category_by_slug('surface')->term_id ); ?></h3>
-
 				<?php
-				$surface_args = array( 'post_type' => 'surface', 'posts_per_page' => 9999 );
-				$surface_loop = new WP_Query( $surface_args );
-				while ( $surface_loop->have_posts() ) : $surface_loop->the_post(); ?>
+				if ( have_posts() ) :
+					while ( have_posts() ) : the_post();
 
+						if( has_category('surface') ):
+
+					?>
 
 				<li>
+
 					<div class="product-image">
 							<?php the_post_thumbnail(); ?>
 					</div>
+
 					<div class="product-overlay">
+
+						<?php
+							if( has_tag('coming-soon') ):
+						?>
+							<a>
+								<span><?php the_title(); ?> Coming Soon</span>
+							</a>
+						<?php
+							else:
+						?>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 							<span><?php the_title(); ?></span>
 						</a>
+					<?php endif; ?>
 					</div>
+
 				</li>
 
-				<?php endwhile; ?>
+			<?php
+						endif;
+					endwhile;
+
+			endif; ?>
 
 			</ul>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-
-get_footer();
- ?>
+<?php get_footer(); ?>
