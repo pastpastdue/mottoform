@@ -43,14 +43,14 @@ h3 {
 	font-size: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin-left: 16px;
+		margin-left: 16px;
 }
 
 h4 {
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin-left: 16px;
+	margin: 0;
 }
 
 .site-margin {
