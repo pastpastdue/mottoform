@@ -57,6 +57,30 @@ get_header(); ?>
 				<?php endwhile; ?>
 			</ul>
 		</main>
+
+		<main id="recognition">
+			<div class="site-margin">
+				<h3>Recognition</h3>
+			</div>
+			<div class="product-flex-list">
+				<div class="grid-2-col col-float-left">
+					<div class="page-additional-text entry-content">
+						<h4>Awards</h4>
+						<?php the_field('awards'); ?>
+					</div>
+					<div class="page-additional-text entry-content">
+						<h4>Grants</h4>
+						<?php the_field('grants'); ?>
+					</div>
+				</div>
+				<div class="grid-2-col col-float-right">
+					<div class="page-additional-text entry-content">
+						<h4>Awards</h4>
+						<?php the_field('select'); ?>
+					</div>
+				</div>
+			</div>
+		</main>
 	</div><!-- #primary -->
 
 	<?php get_footer(); ?>
