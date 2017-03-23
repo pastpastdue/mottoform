@@ -58,7 +58,6 @@ get_header(); ?>
 
 			<?php
 					endwhile;
-
 			endif; ?>
 
 			</ul>
