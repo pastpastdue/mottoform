@@ -166,7 +166,7 @@ h3 {
 }
 
 .site-footer ul {
-	overflow: auto;
+	overflow: hidden;
 	list-style: none;
 	padding: 0;
 }
