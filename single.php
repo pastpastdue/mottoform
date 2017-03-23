@@ -34,7 +34,7 @@ get_header(); ?>
 
 					<?php endif;
 
-				elseif( !empty($new_featured_image) ) :
+				elseif( !empty($new_featured_image) ):
 					echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />'; ?>
 
 					<?php if($new_featured_image['caption']) : ?>

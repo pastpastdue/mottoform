@@ -38,7 +38,7 @@ get_header(); ?>
 								<span><?php the_title(); ?> Coming Soon</span>
 							</a>
 						<?php
-							elseif( !has_tag('coming-soon') ):
+							else:
 						?>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 							<span><?php the_title(); ?></span>
