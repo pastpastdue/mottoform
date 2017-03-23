@@ -75,7 +75,7 @@ get_header(); ?>
 				</div>
 				<div class="grid-2-col col-float-right">
 					<div class="page-additional-text entry-content">
-						<h4>SELECT DESIGNS/ PROJECTS</h4>
+						<h4>SELECT DESIGNS/PROJECTS</h4>
 						<?php get_field('select'); ?>
 					</div>
 				</div>
