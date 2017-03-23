@@ -18,7 +18,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<ul class="product-list" id="product">
-				breaking
 				<?php
 				$product_args = array( 'post_type' => 'post', 'posts_per_page' => 9999 );
 				$product_loop = new WP_Query( $product_args );
@@ -58,7 +57,6 @@ get_header(); ?>
 
 
 			<ul class="product-list" id="surface">
-				broken
 				<h3><?php echo category_description( get_category_by_slug('surface')->term_id ); ?></h3>
 
 				<?php
