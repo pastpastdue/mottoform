@@ -57,7 +57,6 @@ get_header(); ?>
 				</li>
 
 			<?php
-						endif;
 					endwhile;
 
 			endif; ?>
