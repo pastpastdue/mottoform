@@ -20,8 +20,10 @@ get_header(); ?>
 			<ul class="product-list" id="product">
 
 				<?php
-				if ( have_posts() ) :
-					while ( have_posts() ) : the_post(); ?>
+				$product_args = array( 'post_type' => 'post', 'posts_per_page' => 9999 );
+				$product_loop = new WP_Query( $product_args );
+				if ( $product_loop->have_posts() ) :
+				while ( $product_loop->have_posts() ) : $product_loop->the_post(); ?>
 
 				<li>
 
@@ -48,7 +50,8 @@ get_header(); ?>
 
 				</li>
 
-						<?php endwhile;
+
+			<?php endwhile;
 			endif; ?>
 
 			</ul>
@@ -61,6 +64,7 @@ get_header(); ?>
 				<?php
 				$surface_args = array( 'post_type' => 'surface', 'posts_per_page' => 9999 );
 				$surface_loop = new WP_Query( $surface_args );
+				if ( $surface_loop->have_posts() ) :
 				while ( $surface_loop->have_posts() ) : $surface_loop->the_post(); ?>
 
 
@@ -86,7 +90,8 @@ get_header(); ?>
 					</div>
 				</li>
 
-				<?php endwhile; ?>
+				<?php endwhile;
+			endif; ?>
 
 			</ul>
 
