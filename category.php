@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<ul class="product-list" id="product">
-
+				breaking
 				<?php
 				$product_args = array( 'post_type' => 'post', 'posts_per_page' => 9999 );
 				$product_loop = new WP_Query( $product_args );
@@ -58,12 +58,13 @@ get_header(); ?>
 
 
 			<ul class="product-list" id="surface">
-
+				broken
 				<h3><?php echo category_description( get_category_by_slug('surface')->term_id ); ?></h3>
 
 				<?php
 				$surface_args = array( 'post_type' => 'surface', 'posts_per_page' => 9999 );
 				$surface_loop = new WP_Query( $surface_args );
+				if ( $surface_loop->have_posts() ) :
 				while ( $surface_loop->have_posts() ) : $surface_loop->the_post(); ?>
 
 
@@ -89,10 +90,12 @@ get_header(); ?>
 					</div>
 				</li>
 
-				<?php endwhile; ?>
+				<?php endwhile;
+				endif; ?>
 
 			</ul>
 
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
