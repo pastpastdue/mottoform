@@ -46,6 +46,13 @@ h3 {
 	margin-left: 16px;
 }
 
+h4 {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 16px;
+}
+
 .site-margin {
 	margin: 0 62px;
 }
