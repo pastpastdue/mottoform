@@ -28,15 +28,15 @@ get_header(); ?>
 							<?php the_post_thumbnail(); ?>
 					</div>
 					<div class="product-overlay">
-						<?php if ( has_tag('coming-soon') { ?>
+						<?php if ( has_tag('coming-soon') : ?>
 							<a>
 								<span><?php the_title(); ?> Coming Soon</span>
 							</a>
-						<?php } else { ?>
+						<?php endif; elseif ( !has_tag('coming-soon') ) : ?>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 							<span><?php the_title(); ?></span>
 						</a>
-						<?php } ; ?>
+					<?php endif; ?>
 					</div>
 				</li>
 
