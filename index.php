@@ -91,7 +91,7 @@ get_header(); ?>
 				</li>
 
 				<?php endwhile;
-			endif; ?>
+				endif; ?>
 
 			</ul>
 
