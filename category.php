@@ -21,8 +21,7 @@ get_header(); ?>
 
 				<?php
 						$product_query = new WP_Query( array(
-						'post_type' => 'post',
-						'category_name' => 'products',
+						'post_type' => 'product',
 						'posts_per_page' => 999));
 
 						if ( $product_query->have_posts() ) :
