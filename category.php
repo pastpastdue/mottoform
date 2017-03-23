@@ -18,13 +18,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<ul class="product-list" id="product">
+
 				<?php
 				if ( have_posts() ) :
-					while ( have_posts() ) : the_post();
-
-						if( has_category('product') ):
-
-					?>
+					while ( have_posts() ) : the_post(); ?>
 
 				<li>
 
@@ -51,31 +48,26 @@ get_header(); ?>
 
 				</li>
 
-				<?php
-						endif;
-					endwhile;
-
-				endif; ?>
+						<?php endwhile;
+			endif; ?>
 
 			</ul>
 
 
 			<ul class="product-list" id="surface">
+
 				<h3><?php echo category_description( get_category_by_slug('surface')->term_id ); ?></h3>
+
 				<?php
-				if ( have_posts() ) :
-					while ( have_posts() ) : the_post();
+				$surface_args = array( 'post_type' => 'surface', 'posts_per_page' => 9999 );
+				$surface_loop = new WP_Query( $surface_args );
+				while ( $surface_loop->have_posts() ) : $surface_loop->the_post(); ?>
 
-						if( has_category('surface') ):
-
-					?>
 
 				<li>
-
 					<div class="product-image">
 							<?php the_post_thumbnail(); ?>
 					</div>
-
 					<div class="product-overlay">
 
 						<?php
@@ -92,14 +84,9 @@ get_header(); ?>
 						</a>
 					<?php endif; ?>
 					</div>
-
 				</li>
 
-			<?php
-						endif;
-					endwhile;
-
-			endif; ?>
+				<?php endwhile; ?>
 
 			</ul>
 
