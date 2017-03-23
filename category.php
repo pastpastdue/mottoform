@@ -18,15 +18,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<ul class="product-list" id="product">
-
 				<?php
-						$product_query = new WP_Query( array(
-						'post_type' => 'product',
-						'posts_per_page' => 999));
+				if ( have_posts() ) :
+					while ( have_posts() ) : the_post();
 
-						if ( $product_query->have_posts() ) :
-							while ( $product_query->have_posts() ) :
-                $product_query->the_post();
+						if( has_category('product') ):
 
 					?>
 
@@ -55,9 +51,11 @@ get_header(); ?>
 
 				</li>
 
-			<?php
+				<?php
+						endif;
 					endwhile;
-			endif; ?>
+
+				endif; ?>
 
 			</ul>
 
