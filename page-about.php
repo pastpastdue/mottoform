@@ -71,7 +71,7 @@ get_header(); ?>
 						<?php endwhile; ?>
 					</div>
 					<div class="page-additional-text">
-						<h4>Grants</h4>
+						<h4 class="h4-spacer">Grants</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_field('grants'); ?>
 						<?php endwhile; ?>
