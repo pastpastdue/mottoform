@@ -80,6 +80,7 @@ get_header(); ?>
 				<div class="grid-2-col col-float-right">
 					<div class="page-additional-text entry-content">
 						<h4>SELECT DESIGNS/PROJECTS</h4>
+						test
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_sub_field('select_designs'); ?>
 						<?php endwhile; ?>
