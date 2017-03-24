@@ -48,6 +48,7 @@ function mottoform_setup() {
 		add_image_size( '3-col-square', 859, 9999 );
 		add_image_size( '3-col-horizontal', 859, 572, array( 'center', 'center') );
 		add_image_size( '2-col-vertical', 562, 9999 );
+		add_image_size( '2-col-small', 562, 340,  array( 'center', 'center') );
 		add_image_size( '2-col-square', 562, 572, array( 'center', 'center') );
 		add_image_size( '1-col', 265, 340, array( 'center', 'center') );
 
