@@ -67,22 +67,21 @@ get_header(); ?>
 					<div class="page-additional-text entry-content">
 						<h4>Awards</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php the_sub_field('awards'); ?>
+							<?php the_field('awards'); ?>
 						<?php endwhile; ?>
 					</div>
 					<div class="page-additional-text entry-content">
 						<h4>Grants</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php the_sub_field('grants'); ?>
+							<?php the_field('grants'); ?>
 						<?php endwhile; ?>
 					</div>
 				</div>
 				<div class="grid-2-col col-float-right">
 					<div class="page-additional-text entry-content">
 						<h4>SELECT DESIGNS/PROJECTS</h4>
-						testtest
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php the_sub_field('select_designs'); ?>
+							<?php the_field('select_designs'); ?>
 						<?php endwhile; ?>
 					</div>
 				</div>
