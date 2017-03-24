@@ -71,3 +71,7 @@
 	padding: 0;
 	margin: 0;
 }
+
+.page-additional-text h4.h4-spacer {
+	padding-top: 16px;
+}
