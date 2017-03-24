@@ -189,3 +189,9 @@ h4 {
 .site-footer ul li img {
 	padding: 0!important;
 }
+
+.site-footer .menu-image-title {
+	font-size: 1px;
+	position: absolute;
+	z-index: -300;
+}
