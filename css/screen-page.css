@@ -38,6 +38,10 @@
 	margin: 16px 16px 0 16px;
 }
 
+.press-list li.press-wide {
+	width: 562px;
+}
+
 .press-list li .press-image {
 	display: block;
 	position: relative;
