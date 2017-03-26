@@ -43,7 +43,8 @@ h3 {
 	font-size: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
-		margin-left: 16px;
+	margin: 21px 0 21px 16px;
+	margin-left: 16px;
 }
 
 h4 {
