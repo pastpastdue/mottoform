@@ -21,14 +21,14 @@
 	}
 
 	.logo {
-		margin: 0 auto;
+		margin: 0;
 		float: none;
-		text-align: center;
+		text-align: left;
 	}
 
 	.nav {
 		float: none;
-		margin: 0 auto;
+		margin: 0;
 	}
 
   .site-margin {
