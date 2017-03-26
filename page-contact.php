@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<div class="grid-1-col col-float-left" style="margin-left: 0;">
+				<div class="grid-1-col col-float-left featured-image-container" style="margin-left: 0;">
 					<header class="entry-header">
 						<?php the_title( '<h3 class="entry-title" style="margin-top: 0;">', '</h3>' ); ?>
 					</header><!-- .entry-header -->
@@ -30,7 +30,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div>
 
-				<div class="grid-3-col col-float-right" style="margin-right: 0;">
+				<div class="grid-3-col col-float-right featured-image-container" style="margin-right: 0;">
 					<?php if ( has_post_thumbnail() ) {
 	    			the_post_thumbnail( '3-col-horizontal' );
 					} ?>
