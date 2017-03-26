@@ -40,7 +40,7 @@ get_header(); ?>
 
 		<main id="press">
 			<ul class="press-list">
-				<h3>News and Press</h3>
+				<h3 style="margin-bottom: 17px;">News and Press</h3>
 
 				<?php
 				$press_args = array( 'post_type' => 'press', 'posts_per_page' => 999 );
