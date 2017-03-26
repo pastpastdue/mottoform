@@ -10,7 +10,11 @@
 }
 
 #surface {
-	padding-top: 62px;
+	padding-top: 41px;
+}
+
+#surface h3 {
+	margin-top: 0;
 }
 
 .product-list li {
