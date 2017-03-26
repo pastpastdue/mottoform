@@ -278,3 +278,5 @@ function remove_admin_menu_items() {
 }
 
 add_action('admin_menu', 'remove_admin_menu_items');
+
+remove_filter('term_description','wpautop');
