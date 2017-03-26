@@ -44,7 +44,6 @@ h3 {
 	font-weight: 400;
 	text-transform: uppercase;
 	margin: 21px 0 21px 16px;
-	margin-left: 16px;
 }
 
 h4 {
@@ -64,7 +63,7 @@ h4 {
 .wrapper {
 	margin:0 auto;
 	position:relative;
-	padding-top: 126px;
+	padding-top: 105px;
 	overflow: auto;
 }
 
