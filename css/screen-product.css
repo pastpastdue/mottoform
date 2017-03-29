@@ -12,9 +12,12 @@
 
 .product-additional-text {
 	padding-left: 62px!important;
-	margin: 36px 0;
+	margin-bottom: 36px;
 }
 
+.caption-margin-text {
+	margin: 36px 0;
+}
 .product-image-description {
 	padding: 0;
 	margin: 4px 0 0 0;
