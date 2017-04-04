@@ -46,6 +46,16 @@
 
 	}
 
+  .product-flex-list {
+    margin-bottom: 0p
+  }
+
+  .type-post,
+  .type-page {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
 	.logo {
 		margin: 0;
 		float: none;
