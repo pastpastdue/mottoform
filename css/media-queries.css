@@ -66,8 +66,8 @@
   }
 
   .product-list,
-  .post,
-  .page {
+  .type-post,
+  .type-page {
     padding: 0 6%;
   }
 
