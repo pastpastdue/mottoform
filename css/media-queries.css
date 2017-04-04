@@ -49,6 +49,10 @@
     margin-bottom: 0px;
   }
 
+  .col-float-right {
+    float: none;
+  }
+
   .type-post,
   .type-page,
   .type-surface {
