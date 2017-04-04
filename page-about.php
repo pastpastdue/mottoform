@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="featured-image-container grid-2-col">
+					<div class="featured-image-container grid-2-col" style="margin: 0!important;">
 					<?php if ( has_post_thumbnail() ) {
 	    			the_post_thumbnail( '2-col-square' );
 					} ?>
