@@ -75,6 +75,10 @@
     margin: 0 2%;
   }
 
+  .site-margin h3 {
+    margin-left: 42px;
+  }
+
   h3 {
     margin-left: 2%;
   }
