@@ -8,6 +8,19 @@
   .wrapper {
     width: 983px;
   }
+
+  .grid-1-col,
+  .grid-2-col {
+    width: 413px;
+  }
+
+  .grid-3-col {
+    width: 546px;
+  }
+
+  .grid-4-col {
+    width: 100%;
+  }
 }
 
 @media (max-width: 982px) {
