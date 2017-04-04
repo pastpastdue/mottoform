@@ -60,6 +60,11 @@
     margin-right: 46px;
   }
 
+  .no-margin-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 	.logo {
 		margin: 0;
 		float: none;
