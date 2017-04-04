@@ -43,11 +43,10 @@
 	.header {
     padding-top: 24px;
     padding-bottom: 24px;
-
 	}
 
   .product-flex-list {
-    margin-bottom: 0p
+    margin-bottom: 0px;
   }
 
   .type-post,
@@ -106,7 +105,26 @@
 
 @media (max-width: 680px) {
 
-  site-margin {
+  .wrapper {
+    width: 100%;
+  }
+
+  .header {
+    padding: 24px;
+  }
+
+  .product-flex-list {
+    margin-bottom: 0px;
+  }
+
+  .type-post,
+  .type-page,
+  .type-surface {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .site-margin {
     margin: 0 2%;
   }
 
