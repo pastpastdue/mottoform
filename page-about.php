@@ -20,10 +20,11 @@ get_header(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="featured-image-container grid-2-col">
+					<div class="featured-image-container grid-2-col">
 					<?php if ( has_post_thumbnail() ) {
 	    			the_post_thumbnail( '2-col-square' );
 					} ?>
+					</div>
 					<header class="entry-header">
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 					</header><!-- .entry-header -->
@@ -31,7 +32,6 @@ get_header(); ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
-				</div>
 			</article><!-- #post-## -->
 
 		<?php endwhile; endif; ?>
