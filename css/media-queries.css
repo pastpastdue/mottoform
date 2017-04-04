@@ -51,7 +51,8 @@
   }
 
   .type-post,
-  .type-page {
+  .type-page,
+  .type-surface {
     margin-left: 46px;
     margin-right: 46px;
   }
