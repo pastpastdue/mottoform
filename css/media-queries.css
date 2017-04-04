@@ -26,7 +26,7 @@
   }
 
   .grid-3-col {
-    width: 546px;
+    width: 628px;
   }
 
   .grid-4-col {
@@ -41,7 +41,8 @@
 	}
 
 	.header {
-    padding: 24px 46px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 	}
 
