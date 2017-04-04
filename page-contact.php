@@ -30,7 +30,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div>
 
-				<div class="grid-3-col col-float-right featured-image-container" style="margin-right: 0;">
+				<div class="grid-3-col col-float-right featured-image-container no-margin-mobile" style="margin-right: 0;">
 					<?php if ( has_post_thumbnail() ) {
 	    			the_post_thumbnail( '3-col-horizontal' );
 					} ?>
