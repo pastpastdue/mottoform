@@ -9,7 +9,10 @@
     width: 983px;
   }
 
-  .grid-1-col,
+  .grid-1-col {
+    width: 190px;
+  }
+
   .grid-2-col {
     width: 413px;
   }
