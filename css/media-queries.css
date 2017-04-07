@@ -32,6 +32,15 @@
   .grid-4-col {
     width: 858px;
   }
+
+  .press-list li {
+  	width: 190px;
+  }
+
+  .press-list li.press-wide {
+  	width: 413px;
+  }
+
 }
 
 @media (max-width: 982px) {
