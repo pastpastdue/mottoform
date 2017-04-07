@@ -96,6 +96,10 @@
     width: 95%;
   }
 
+  .product-additional-text {
+    padding-right: 62px;
+  }
+
 	.product-list li {
 		width: 46%;
 		margin: 2%;
