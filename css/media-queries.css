@@ -83,6 +83,10 @@
     margin-left: 2%;
   }
 
+  .entry-content {
+    width: 85%;
+  }
+
 	.product-list li {
 		width: 46%;
 		margin: 2%;
