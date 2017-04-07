@@ -55,7 +55,7 @@
 }
 
 .press-list li .press-description {
-	height: 80px;
+	height: 64px;
 	text-overflow: ellipsis;
 }
 
