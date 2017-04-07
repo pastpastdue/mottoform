@@ -37,7 +37,6 @@
 	position: relative;
 	float: left;
 	width: 265px;
-	height: 404px;
 	overflow: hidden;
 	margin: 16px 16px 0 16px;
 }
@@ -49,11 +48,15 @@
 .press-list li .press-image {
 	display: block;
 	position: relative;
-	height: 340px;
 }
 
 .press-list li .press-image img {
 	width: 100%;
+}
+
+.press-list li .press-description {
+	height: 80px;
+	text-overflow: ellipsis;
 }
 
 .press-list li .press-description p {
