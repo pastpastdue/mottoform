@@ -38,7 +38,7 @@
   }
 
   .press-list li.press-wide {
-  	width: 413px;
+  	width: 404px;
   }
 
 }
@@ -102,13 +102,15 @@
 	}
 
   .grid-1-col,
-  .grid-2-col {
+  .grid-2-col,
+  .press-list li {
     width: 46%;
     margin: 2%;
   }
 
   .grid-3-col,
-  .grid-4-col {
+  .grid-4-col,
+  .press-list li.press-wide {
     width: 96%;
     margin: 2%;
   }
