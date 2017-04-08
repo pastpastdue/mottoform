@@ -32,7 +32,6 @@
   </li>
 
 <?php endif; if( !empty($two_column_uncropped) ): ?>
-
   <li class="grid-2-col col-float-left">
     <div class="product-image">
       <?php // loop through the rows of data

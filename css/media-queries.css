@@ -110,6 +110,7 @@
   .press-list li {
     width: 46%;
     margin: 2%;
+    margin-bottom: 0;
   }
 
   .grid-3-col,
@@ -117,6 +118,8 @@
   .press-list li.press-wide {
     width: 96%;
     margin: 2%;
+    margin-bottom: 0;
+
   }
 
 	.product-list li:after {
