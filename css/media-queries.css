@@ -171,9 +171,9 @@
     margin: 0;
   }
 
-  .press-list li .press-description {
+.press-list li .press-description {
     height: initial;
-  }
+}
 
   .grid-3-col,
   .grid-4-col,
