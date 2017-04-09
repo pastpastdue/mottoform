@@ -111,6 +111,7 @@
   .product-list li .product-overlay a {
     opacity: 1;
     background: transparent;
+    color: #666666;
   }
 
 	.product-list li {
