@@ -167,6 +167,7 @@
   .product-flex-list,
   .type-page {
     padding: 0;
+    margin: 0 6%;
   }
 
   .grid-3-col,
@@ -176,14 +177,14 @@
   .grid-2-col,
   .press-list li {
     width: 96%;
-    margin: 2%;
+    margin: 2% 0;
     margin-bottom: 0;
 
   }
 
 	.product-list li {
-		width: 99.5%;
-		margin: 0.5%;
+		width: 100%;
+		margin: 0.5% 0;
 		margin-bottom: 32px;
 	}
 
