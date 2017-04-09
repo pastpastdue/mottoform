@@ -172,7 +172,7 @@
 
   .grid-3-col,
   .grid-4-col,
-  .press-list li.press-wide.
+  .press-list li.press-wide,
   .grid-1-col,
   .grid-2-col,
   .press-list li {
@@ -186,6 +186,11 @@
 		width: 100%;
 		margin-bottom: 32px;
 	}
+
+  .product-additional-text {
+    padding-right: 24px;
+    padding-left: 24px!important;
+  }
 
   h3 {
     margin-left: 0.5%;
