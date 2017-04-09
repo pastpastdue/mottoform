@@ -172,7 +172,7 @@
   }
 
   .press-description {
-    height: auto;
+    height: initial;
   }
 
   .grid-3-col,
