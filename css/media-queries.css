@@ -145,7 +145,7 @@
   }
 
   .header {
-    padding: 24px;
+    padding: 24px 6%;
   }
 
   .product-flex-list {
@@ -155,8 +155,8 @@
   .type-post,
   .type-page,
   .type-surface {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .site-margin {
@@ -166,15 +166,7 @@
   .product-list,
   .product-flex-list,
   .type-page {
-    padding: 0 6%;
-  }
-
-  .grid-1-col,
-  .grid-2-col,
-  .press-list li {
-    width: 46%;
-    margin: 2%;
-    margin-bottom: 0;
+    padding: 0;
   }
 
   .grid-3-col,
