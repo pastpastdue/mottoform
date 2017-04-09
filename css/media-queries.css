@@ -177,7 +177,7 @@
   .grid-2-col,
   .press-list li {
     width: 96%;
-    margin: 2% 0;
+    margin: 2% 32px;
     margin-bottom: 0;
 
   }
