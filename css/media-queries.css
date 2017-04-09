@@ -100,9 +100,14 @@
     padding-right: 62px;
   }
 
+  .product-list li .product-overlay a span {
+    bottom: -24px;
+    left: 0;
+  }
+
 	.product-list li {
 		width: 46%;
-		margin: 2%;
+		margin: 2% 2% 28px 2%;
 	}
 
   .grid-1-col,
