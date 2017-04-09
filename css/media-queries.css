@@ -165,9 +165,14 @@
 
   .product-list,
   .product-flex-list,
+  .press-list,
   .type-page {
     padding: 0 6%;
     margin: 0;
+  }
+
+  .press-description {
+    height: auto;
   }
 
   .grid-3-col,
