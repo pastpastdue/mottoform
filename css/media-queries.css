@@ -105,6 +105,11 @@
     left: 0;
   }
 
+  .product-list li .product-overlay a {
+    opacity: 1;
+    background: transparent;
+  }
+
 	.product-list li {
 		width: 46%;
 		margin: 2% 2% 28px 2%;
