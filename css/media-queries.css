@@ -177,7 +177,7 @@
   .grid-2-col,
   .press-list li {
     width: 96%;
-    margin: 2% 32px;
+    margin: 32px 0;
     margin-bottom: 0;
 
   }
@@ -185,7 +185,7 @@
 	.product-list li {
 		width: 100%;
     margin: 0%;
-		margin-bottom: 32px;
+		margin-bottom:32px;
 	}
 
   .product-additional-text {
