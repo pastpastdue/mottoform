@@ -103,6 +103,9 @@
   .product-list li .product-overlay a span {
     bottom: -24px;
     left: 0;
+    font-size: 15px;
+    line-height: 19px;
+    color: #666666;
   }
 
   .product-list li .product-overlay a {
