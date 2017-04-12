@@ -84,12 +84,12 @@
     margin: 0 2%;
   }
 
-  h3.site-margin {
-    margin-left: 42px;
-  }
-
   h3 {
     margin-left: 2%;
+  }
+
+  .site-margin h3 {
+    margin-left: 42px;
   }
 
   .entry-content {
@@ -173,9 +173,6 @@
     margin-right: 6%;
   }
 
-  .entry-content iframe {
-  	width: 100%;
-  }
   .entry-content iframe
   .entry-content iframe object,
   .entry-content iframe embed {
