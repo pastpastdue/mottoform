@@ -173,6 +173,10 @@
     margin-right: 6%;
   }
 
+  .entry-content iframe {
+  	width: 100%;
+  }
+
   .site-margin {
     margin: 0 0;
   }
