@@ -190,9 +190,13 @@
     margin: 0;
   }
 
-.press-list li .press-description {
-    height: initial;
-}
+  .press-list li .press-description {
+      height: initial;
+  }
+
+  #recognition .site-margin h3 {
+    margin-left: 24px;
+  }
 
   .grid-3-col,
   .grid-4-col,
