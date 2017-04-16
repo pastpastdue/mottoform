@@ -245,7 +245,8 @@
     line-height: 19px;
   }
 
-  .image-description {
+  .product-image-description,
+  .press-description {
     font-size: 12px;
     line-height: 15px;
   }
