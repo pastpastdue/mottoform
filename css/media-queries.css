@@ -150,6 +150,10 @@
     margin-right: 0;
   }
 
+  .site-footer {
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 680px) {
@@ -160,6 +164,10 @@
 
   .header {
     padding: 24px 6%;
+  }
+
+  .page-contact {
+    padding-top: 22px;
   }
 
   .product-flex-list {
@@ -229,8 +237,13 @@
   }
 
   .entry-content p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .image-description {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
