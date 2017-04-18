@@ -71,13 +71,13 @@ get_header(); ?>
 			</div>
 			<div class="product-flex-list">
 				<div class="grid-2-col col-float-left">
-					<div class="page-additional-text">
+					<div class="page-additional-text recognition">
 						<h4>Awards</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_field('awards'); ?>
 						<?php endwhile; ?>
 					</div>
-					<div class="page-additional-text">
+					<div class="page-additional-text recognition">
 						<h4 class="h4-spacer">Grants</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_field('grants'); ?>
@@ -85,7 +85,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="grid-2-col col-float-right">
-					<div class="page-additional-text">
+					<div class="page-additional-text recognition">
 						<h4>SELECT DESIGNS/PROJECTS</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_field('select_designs'); ?>
