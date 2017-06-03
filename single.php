@@ -14,13 +14,12 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-
 		?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="featured-image-container">
 			<?php
-
+				if ( !post_password_required()):
 				$image_size = get_field('featured_image_size');
 				$new_featured_image = get_field('select_featured_image');
 
@@ -39,7 +38,6 @@ get_header(); ?>
 					<?php endif;
 
 				elseif(!empty($new_featured_image) ):
-					if(!empty($post->post_password)):
 						echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />'; ?>
 
 						<?php if($new_featured_image['caption']) : ?>
