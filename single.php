@@ -68,7 +68,7 @@ get_header(); ?>
 	</main><!-- #main -->
 
 	<?php // open the WordPress loop
-	if(!empty($post->post_password)):
+	if ( !post_password_required()):
 		// are there any rows within within our flexible content?
 		if( have_rows('product_page_content') ): ?>
 
