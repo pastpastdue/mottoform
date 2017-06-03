@@ -14,7 +14,6 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-			if ( ! post_password_required() ) {
 
 		?>
 
@@ -40,14 +39,15 @@ get_header(); ?>
 					<?php endif;
 
 				elseif( !empty($new_featured_image) ):
-					echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />'; ?>
+					if ( !post_password_required() ):
+						echo '<img src="' . $new_featured_image['sizes'][$image_size] . '" alt="' . $new_featured_image['alt'] . '" />'; ?>
 
-					<?php if($new_featured_image['caption']) : ?>
-		      <div class="product-image-description">
-		        <?php echo $new_featured_image['caption'] ?>
-		      </div>
-		      <?php endif; ?>
-
+						<?php if($new_featured_image['caption']) : ?>
+			      <div class="product-image-description">
+			        <?php echo $new_featured_image['caption'] ?>
+			      </div>
+			      <?php endif; ?>
+					<?php endif; ?>
 				<?php endif;
 
 
@@ -95,6 +95,6 @@ get_header(); ?>
 
 	</div>
 
-	<?php } endif; // close flexible content conditional ?>
+	<?php endif; // close flexible content conditional ?>
 
 <?php get_footer(); ?>
