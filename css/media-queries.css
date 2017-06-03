@@ -62,6 +62,10 @@
     float: none;
   }
 
+  .really-float-right {
+  	float: right;
+  }
+
   .type-post,
   .type-page,
   .type-surface {

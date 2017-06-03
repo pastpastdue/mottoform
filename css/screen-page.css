@@ -71,7 +71,9 @@
 	border-bottom: 1px solid #666666;
 	color: #666666;
 }
-
+.really-float-right {
+	float: right;
+}
 .recognition {
 	font-size: 16px;
 	line-height: 32px;

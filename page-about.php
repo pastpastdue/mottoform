@@ -84,7 +84,7 @@ get_header(); ?>
 						<?php endwhile; ?>
 					</div>
 				</div>
-				<div class="grid-2-col col-float-right">
+				<div class="grid-2-col col-float-right really-float-right">
 					<div class="page-additional-text recognition">
 						<h4>SELECT DESIGNS/PROJECTS</h4>
 						<?php while ( have_posts() ) : the_post(); ?>
