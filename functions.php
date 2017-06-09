@@ -282,3 +282,20 @@ function remove_admin_menu_items() {
 add_action('admin_menu', 'remove_admin_menu_items');
 
 remove_filter('term_description','wpautop');
+
+function the_title_trim($title) {
+
+	$title = esc_attr($title);
+
+	$findthese = array(
+		'#Protected:#',
+	);
+
+	$replacewith = array(
+		'Password Protected:', // What to replace "Protected:" with
+	);
+
+	$title = preg_replace($findthese, $replacewith, $title);
+	return $title;
+}
+add_filter('the_title', 'the_title_trim');
