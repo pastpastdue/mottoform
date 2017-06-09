@@ -292,7 +292,7 @@ function the_title_trim($title) {
 	);
 
 	$replacewith = array(
-		'Password Protected:', // What to replace "Protected:" with
+		'', // What to replace "Protected:" with
 	);
 
 	$title = preg_replace($findthese, $replacewith, $title);
